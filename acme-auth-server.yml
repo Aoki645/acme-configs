@@ -16,7 +16,8 @@ eureka:
 security:
     oauth2:
         client:
-            access-token-validity-seconds: 1800            
+            access-token-validity-seconds: 1800 
+            authorized-grant-types: password,refresh_token
             client-id: 589974106770-dd836st9ucbeqr014pa878d2l759p00t.apps.googleusercontent.com
             client-secret: mvXDITlzGbmM85AZ5Oc2X7OT
             resource-ids: resources
