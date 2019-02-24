@@ -16,18 +16,14 @@ eureka:
 security:
     oauth2:
         client:
-            access-token-validity-seconds: 1800 
+        client:
+            access-token-validity-seconds: 1800
             authorized-grant-types: password,refresh_token
-            client-id: 589974106770-dd836st9ucbeqr014pa878d2l759p00t.apps.googleusercontent.com
-            client-secret: mvXDITlzGbmM85AZ5Oc2X7OT
+            client-id: coderef
+            client-secret: $2a$10$p9Pk0fQNAQSesI4vuvKA0OZanDD2
             resource-ids: resources
-            accessTokenUri: https://www.googleapis.com/oauth2/v4/token
-            userAuthorizationUri: https://accounts.google.com/o/oauth2/v2/auth
-            clientAuthenticationScheme: form
-            scope: openid email profile
-            resource:
-              userInfoUri: https://www.googleapis.com/oauth2/v3/userinfo
-              preferTokenInfo: true
+            scope: read,write
+
 spring:
     datasource:
         data: classpath:/sql/data.sql
