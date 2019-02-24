@@ -27,7 +27,7 @@ spring:
     datasource:
         data: classpath:/sql/data.sql
         driver-class-name: com.mysql.jdbc.Driver  
-        username: admin
+        username: invilla
         password: '1234'
         platform: mysql
         schema: classpath:/sql/schema.sql
